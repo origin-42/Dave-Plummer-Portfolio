@@ -1,0 +1,23 @@
+/* Figure */
+figure {
+    align-items: center;
+    margin-top: 30px;
+}
+figure * {
+    margin-bottom: 5px;
+}
+figure h1 {
+    font-size: var(--header1);
+    color: var(--text-true-blue);
+    font-family: var(--sub-family);
+    font-weight: 900;
+}
+figure img {
+    position: relative;
+    border-radius: 50%;
+    width: 300px;
+    border: 5px solid var(--page-true-blue);
+    box-shadow: 0 0 5px 5px var(--text-true-blue);
+    z-index: -2;
+}
+

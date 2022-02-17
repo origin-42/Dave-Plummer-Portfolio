@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;1,400;1,700;1,900&display=swap');
+
+:root {
+    /* color palette */
+    --page-true-blue: #3066BE;
+    --text-true-blue: #1a3662;
+    --page-aqua-blue: #119DA4;
+    --text-aqua-blue: #119DA4;
+    --page-gray-blue: #6D9DC5;
+    --text-gray-blue: #6D9DC5;
+    --page-light-blue: #80DED9;
+    --text-light-blue: #80DED9;
+    --page-lightaqua-blue: #AEECEF;
+    --text-lightaqua-blue: #AEECEF;
+    --black: #000;
+    --white: #fff;
+
+    /* font sizes */
+    /* headers */
+    --header1: 2.5rem;
+    --header2: 2rem;
+    --header3: 1.6rem;
+    --header4: 1.3rem;
+    --header5: 1rem;
+
+    /* fonts */
+    --main-family: 'Roboto Slab', serif;;
+    /* header and footer */
+    --sub-family: 'Source Sans Pro', sans-serif;;
+}
+
+/* flex classes */
+.flex {
+    display: flex;
+}.column{
+    flex-direction: column;
+}.wrap {
+    flex-wrap: wrap;
+}
+/* grid classes */
+.grid {
+    display: grid;
+}.grid-page-template {
+    grid-template-columns: 1fr 3fr;
+}
+
+/* tag selectors */
+img {
+    width: 100%;
+    height: 0 auto;
+}
+
+/* class selectors */
+
+/* Background Image */
+body {
+    position: relative;
+    z-index: 0;
+}
+body:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    background-image: url('../images/horison.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main {
+    position: relative;
+}
+main * {
+    z-index: 1;
+}

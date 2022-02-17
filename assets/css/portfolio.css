@@ -1,0 +1,5 @@
+/* Remove background image */
+.main-content {
+    background: var(--white);
+    z-index: 2;
+}

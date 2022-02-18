@@ -1,7 +1,7 @@
 /* Figure */
 figure {
     align-items: center;
-    margin-top: 30px;
+    margin: 80px 0;
 }
 figure * {
     margin-bottom: 5px;
@@ -19,5 +19,50 @@ figure img {
     border: 5px solid var(--page-true-blue);
     box-shadow: 0 0 5px 5px var(--text-true-blue);
     z-index: -2;
+}
+
+nav ul li a {
+    color: var(--page-true-blue);
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+
+/* NAVIGATION */
+nav {
+    margin-bottom: 100px;
+    padding: 50px 120px;
+}
+nav li {
+    margin: 10px 0;
+}
+nav li:hover {
+    text-decoration: underline;
+    animation: appear 1s;
+}
+
+/* FOOTER */
+footer {
+    align-items: center;
+    font-size: 1.3rem;
+    padding: 0 50px 20px 60px;
+}
+footer h4 {
+    color: var(--page-aqua-blue);
+}
+footer ul li {
+    margin: 4px;
+}
+footer ul li i {
+    color: var(--page-true-blue);
+}
+
+/* animation keyframes */
+@keyframes appear {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
 }
 

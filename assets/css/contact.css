@@ -1,5 +1,54 @@
 /* Remove background image */
+aside * {
+    position: absolute;
+    left: -999em;
+}
 .main-content {
     background: var(--white);
     z-index: 2;
+}
+
+.main-content {
+    background: transparent;
+}
+
+/* main content */
+.contact-me-content {
+    padding: 80px 50px 140px 50px;
+    width: 500px;
+    background-color: var(--white);
+    box-shadow: 12px -15px 15px -4px rgba(31, 73, 125, 0.8), -12px -15px 8px -4px rgba(31, 73, 125, 0.8);
+}
+.contact-h2 {
+    font-size: var(--jumbo);
+    color: var(--text-true-blue);
+    text-shadow: 1px 1px 2px var(--text-aqua-blue);
+    justify-content: center;
+}
+.contact-me-content section {
+    margin-top: 30px;
+}
+.contact-me-content * {
+    margin-bottom: 10px;
+}
+
+/* lists */
+.contact-left {
+    padding-right: 25px;
+    font-weight: bold;
+    text-align: end;
+}
+.contact-me-list {
+    width: 70%;
+    justify-content: space-between;
+} 
+.contact-nav {
+    padding: 10px 0 0 0;
+    justify-content: center;
+}
+
+@media (max-width: 1000px) {
+    .contact-me-content {
+        height: 100vh;
+    }
 }

@@ -47,6 +47,11 @@ aside * {
     justify-content: center;
 }
 
+.cont-fa {
+    display: inherit;
+    color: var(--text-true-blue);
+}
+
 @media (max-width: 1000px) {
     .contact-me-content {
         height: 100vh;

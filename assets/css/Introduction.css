@@ -23,6 +23,7 @@ main * {
 }
 .main-content {
     background: rgba(16, 50, 105, 0.3);
+    border-left: 5px double var(--text-true-blue);
 }
 
 /* Hero */

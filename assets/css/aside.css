@@ -10,7 +10,11 @@ figure h1 {
     font-size: var(--header1);
     color: var(--text-true-blue);
     font-family: var(--sub-family);
-    font-weight: 900;
+    font-weight: bold;
+}
+figure figcaption {
+    color: var(--text-light-blue);
+    text-shadow: 1px 1px 2px var(--text-true-blue);
 }
 figure img {
     position: relative;
@@ -54,6 +58,10 @@ footer ul li {
 }
 footer ul li i {
     color: var(--page-true-blue);
+    cursor: pointer;
+}
+footer ul li i:hover {
+    text-shadow: 0 0 3px var(--text-true-blue);
 }
 
 /* animation keyframes */

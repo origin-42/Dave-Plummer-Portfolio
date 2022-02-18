@@ -24,10 +24,16 @@
     --header4: 1.3rem;
     --header5: 1rem;
 
+    /* all */
+    --jumbo: 3.5rem;
+    --large: 3rem;
+
     /* fonts */
-    --main-family: 'Roboto Slab', serif;;
+    --main-family: 'Roboto Slab', serif;
     /* header and footer */
-    --sub-family: 'Source Sans Pro', sans-serif;;
+    --sub-family: 'Source Sans Pro', sans-serif;
+
+    font-family: var(--main-family);
 }
 
 /* flex classes */
@@ -73,6 +79,7 @@ body:before {
 }
 main {
     position: relative;
+    height: 100vh;
 }
 main * {
     z-index: 1;
@@ -80,6 +87,12 @@ main * {
 
 @media (max-width: 1000px) {
     .main-content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 790px) {
+    .main {
         display: flex;
         flex-direction: column;
     }

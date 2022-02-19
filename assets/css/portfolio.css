@@ -6,6 +6,9 @@
     font-size: 1.4rem;
     padding: 10px 0 ;
 }
+.grid-page-template {
+    height: 100%;
+}
 
 .main-content {
     background: var(--white);
@@ -42,6 +45,10 @@
 }
 .timeline-present {
     height: 100px;
+}
+.latest-app img {
+    width: 23rem;
+    height: 14rem;
 }
 .project-text {
     display: flex;
@@ -91,6 +98,7 @@
     margin: 2px;
     text-align: center;
 }
+
 
 @media (max-width: 1300px) {
     .main {

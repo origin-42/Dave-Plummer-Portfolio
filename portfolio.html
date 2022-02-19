@@ -15,31 +15,41 @@
 <body>
     <main class="grid grid-page-template main">
         <!-- Aside Info Section -->
-        <aside class="flex column aside-portfolio">
-            <figure class="header-image flex column">
-                <img src="./assets/images/daveplummer.jpg" alt="photo of David Plummer">
-                <h1>David Plummer</h1>
-                <figcaption>Full Stack Web Developer</figcaption>
-            </figure>
-            
-            <nav>
-                <ul class="flex column header-list">
-                    <li class="navigation"><a href="./index.html">Introduction</a></li>
-                    <li class="navigation"><a href="./portfolio.html">Portfolio</a></li>
-                    <li class="navigation"><a href="./contact.html">Contact</a></li>
-                </ul>
-            </nav>
-
-            <footer class="flex column wrap">
-                <h4 class="header4">Get in Touch</h4>
-                <ul class="flex">
-                    <li><a href="linkedinaccount" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href="https://instagram.com/origin_42" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="https://github.com/origin-42" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                    <li><a href="https://www.facebook.com/Origin42/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-                </ul>
-            </footer>
-        </aside>
+        <section class="sticky-container">
+            <aside class="flex column aside-portfolio">
+                <figure class="header-image flex column">
+                    <img src="./assets/images/daveplummer.jpg" alt="photo of David Plummer">
+                    <h1>David Plummer</h1>
+                    <figcaption>Full Stack Web Developer</figcaption>
+                </figure>
+                
+                <nav class="flex wrap nav-list-dir">
+                    <ul class="flex column header-list">
+                        <li class="navigation"><a href="./index.html">Introduction</a></li>
+                        <li class="navigation"><a href="./portfolio.html">Portfolio</a></li>
+                        <li class="navigation"><a href="./contact.html">Contact</a></li>
+                    </ul>
+                    <ul class="flex column header-list directory">
+                        <li class="navigation portfolio-nav"><a href="#timeline-present">Current Availability</a></li>
+                        <li class="navigation portfolio-nav" id="project-history"><a href="#">Project History</a></li>
+                        <li class="navigation portfolio-nav"><a href="#horiseon">Horiseon</a></li>
+                        <li class="navigation portfolio-nav"><a href="#mini-project">Mini-Project</a></li>
+                        <li class="navigation portfolio-nav"><a href="#choredoor">ChoreDoor</a></li>
+                    </ul>
+                </nav>
+    
+                <footer class="flex column wrap">
+                    <h4 class="header4">Get in Touch</h4>
+                    <ul class="flex">
+                        <li><a href="linkedinaccount" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="https://instagram.com/origin_42" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://github.com/origin-42" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="https://www.facebook.com/Origin42/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    </ul>
+                </footer>
+            </aside>
+        </section>
+        
         
         <!-- Main Page Content -->
         <section class="flex column main-content">
@@ -47,7 +57,7 @@
             <p class="timeline-header-text">Unless otherwise stated, all work was started and completed by me.</p>
             <ul class="timeline">
                 <!-- timeline present -->
-                <li class="portfolio-timeline-list timeline-present">
+                <li class="portfolio-timeline-list timeline-present" id="timeline-present">
                     <article class="timeline-date">
                         <time class="timeline-date-text">Now</time>
                     </article>
@@ -58,7 +68,7 @@
                     </section>
                 </li>
                 <!-- timeline-horiseon -->
-                <li class="portfolio-timeline-list timeline-twent22 horiseon">
+                <li class="portfolio-timeline-list timeline-twent22 horiseon latest-app" id="horiseon">
                     <article class="timeline-date">
                         <time class="timeline-date-text">2022</time>
                     </article>
@@ -98,7 +108,7 @@
                     </section>
                 </li>
                 <!-- timeline-mini-project -->
-                <li class="portfolio-timeline-list timeline-twent22 mini-project">
+                <li class="portfolio-timeline-list timeline-twent22 mini-project" id="mini-project">
                     <article class="timeline-date">
                         <time class="timeline-date-text">2022</time>
                     </article>
@@ -130,7 +140,7 @@
                     </section>
                 </li>
                 <!-- timeline-choredoor -->
-                <li class="portfolio-timeline-list timeline-twenty18 choredoor">
+                <li class="portfolio-timeline-list timeline-twenty18 choredoor" id="choredoor">
                     <article class="timeline-date">
                         <time class="timeline-date-text">2018</time>
                     </article>

@@ -1,4 +1,5 @@
 /* Figure */
+
 figure {
     align-items: center;
     margin: 80px 0;
@@ -62,6 +63,36 @@ footer ul li i {
 }
 footer ul li i:hover {
     text-shadow: 0 0 3px var(--text-true-blue);
+}
+
+/* Introduction Page specific styling */
+.nav-list-dir {
+    justify-content: space-between;
+}
+.portfolio-nav {
+    text-align: end;
+}
+.directory li a {
+    font-size: 1rem;
+}
+#project-history a {
+    font-size: 1.3rem;
+}
+#project-history:hover {
+    animation: none;
+    text-decoration: none;
+}
+.aside-portfolio {
+    position: sticky;
+    top: 0;
+}
+.aside-portfolio nav {
+    padding: 50px 20px 50px 120px;
+}
+section.sticky-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 /* animation keyframes */

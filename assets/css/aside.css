@@ -16,7 +16,7 @@ figure figcaption {
     color: var(--text-light-blue);
     text-shadow: 1px 1px 2px var(--text-true-blue);
 }
-figure img {
+aside img {
     position: relative;
     border-radius: 50%;
     width: 300px;

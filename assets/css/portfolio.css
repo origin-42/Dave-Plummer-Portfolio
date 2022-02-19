@@ -1,5 +1,101 @@
 /* Remove background image */
+.timeline-header {
+    font-size: var(--jumbo);
+}
+.timeline-header-text {
+    font-size: 1.4rem;
+    padding: 10px 0 ;
+}
+
 .main-content {
     background: var(--white);
     z-index: 2;
+    padding: 50px 30px 30px 30px;
+}
+.main-content img {
+    width: 20rem;
+    height: 12rem;
+}
+.portfolio-timeline-list {
+    display: flex;
+    padding: 20px;
+}
+.timeline-date {
+    justify-self: flex-end;
+    border-right: 1px solid black;
+    padding-right: 40px;
+}
+.project-content {
+    display: flex;
+    padding: 0 0 0 20px;
+    height: 400px;
+    position: relative;
+}
+.project-content::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    width: 100%;
+    height: 1px;
+    background-color: var(--black);
+}
+.timeline-present {
+    height: 100px;
+}
+.project-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.timeline-present .project-text {
+    justify-content: flex-start;
+}
+.project-text h2 {
+    font-size: var(--header2);
+}
+.project-text h3 {
+    font-weight: 600;
+}
+.project-text ul {
+    list-style: square;
+    text-indent: 1.2rem;
+    padding-left: 1rem;
+}
+.project-text button {
+    text-align: center;
+    color: var(--text-light-blue);
+    padding: 10px 0;
+    background-color: var(--page-true-blue);
+    bottom: unset;
+    width: 200px;
+    font-weight: 900;
+}
+.project-text button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.project-content figure {
+    align-items: flex-start;
+    margin: 0;
+}
+.technologies ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.technologies li {
+    background-color: var(--page-true-blue);
+    color: var(--text-light-blue);
+    padding: 6px;
+    flex-basis: 33%;
+    margin: 2px;
+    text-align: center;
+}
+
+
+@media (max-width: 1300px) {
+    .main-content {
+        display: flex;
+        flex-direction: column;
+    }
 }

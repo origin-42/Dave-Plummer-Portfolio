@@ -15,8 +15,8 @@ ul, ul li, a {
 }
 button {
 	border: none;
-	color: white;
-	background-color: white;
-	background: white;
+	color: inherit;
+	background-color: inherit;
+	background: inherit;
 }
 

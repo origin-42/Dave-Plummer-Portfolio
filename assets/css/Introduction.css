@@ -84,3 +84,38 @@ main * {
         text-shadow: 1px 1px 4px var(--text-aqua-blue);
     }
 }
+
+@media (max-width: 400px) {
+    .header-image h1 {
+        text-align: center;
+    }
+    .main nav {
+            margin-bottom: 0px;
+            padding: 20px 10px;
+    }
+    .header-list {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .hero {
+        text-align: center;
+        padding: 30px 5px;
+    }
+    .hero h2 {
+        font-size: 2rem;
+    }
+    .hero h3 {
+        font-size: 0.9rem;
+    }
+    .hero ul {
+        margin: 0;
+    }
+    .hero button {
+        margin-top: 10px;
+        border: 1px solid var(--white);
+        width: 90%;
+    }
+    .hero-navigation li button a {
+        font-size: 0.9rem;
+    }
+}

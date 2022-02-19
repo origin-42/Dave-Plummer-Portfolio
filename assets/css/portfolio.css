@@ -18,6 +18,7 @@
 .main-content img {
     width: 20rem;
     height: 12rem;
+    border: 1px solid var(--page-true-blue);
 }
 .portfolio-timeline-list {
     display: flex;
@@ -71,12 +72,14 @@
 }
 .project-text button {
     text-align: center;
-    color: var(--text-light-blue);
     padding: 10px 0;
     background-color: var(--page-true-blue);
     bottom: unset;
     width: 200px;
     font-weight: 900;
+}
+.project-text button a {
+    color: var(--text-light-blue);
 }
 .project-text button:hover {
     text-decoration: underline;
@@ -133,5 +136,30 @@
     }
     .portfolio-timeline-list {
         padding: 20px 0;
+    }
+}
+
+@media (max-width: 400px) {
+    article.project-text * {
+        margin-bottom: 10px;
+    }
+    article.project-text h3 {
+        text-align: center;
+    }
+    .project-content::after {
+        left: 0;
+        top: -10px;
+    }
+    .portfolio-timeline-list {
+        margin-bottom: 30px;
+    }
+    .technologies h4 {
+        text-align: center;
+    }
+    .technologies ul {
+        justify-content: center;
+    }
+    .technologies li {
+        flex-basis: 40%;
     }
 }

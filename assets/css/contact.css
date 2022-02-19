@@ -31,6 +31,15 @@ aside * {
 .contact-me-content * {
     margin-bottom: 10px;
 }
+.contact-me-content p {
+    text-align: center;
+}
+.contact-me-content .top-list {
+    align-items: center;
+}
+.top-li-sec {
+    justify-content: center;
+}
 
 /* lists */
 .contact-left {
@@ -39,8 +48,10 @@ aside * {
     text-align: end;
 }
 .contact-me-list {
+    flex-direction: row;
     width: 70%;
     justify-content: space-between;
+    flex-wrap: wrap;
 } 
 .contact-nav {
     padding: 10px 0 0 0;
@@ -55,5 +66,27 @@ aside * {
 @media (max-width: 1000px) {
     .contact-me-content {
         height: 100vh;
+    }
+}
+
+@media (max-width: 550px) {
+    nav {
+        padding: 0;
+    }
+    .contact-me-content {
+        padding: 5px;
+        width: 100%;
+    }
+    .contact-me-content h2 {
+        font-size: 2rem;
+    }
+    .top-list {
+        flex-wrap: wrap;
+    }
+    .top-list li, .top-list i .top-list a {
+        font-size: 0.6rem;
+    }
+    .contact-me-list {
+        justify-content: space-around;
     }
 }

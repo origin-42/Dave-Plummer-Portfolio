@@ -105,3 +105,34 @@ section.sticky-container {
     }
 }
 
+@media (max-width: 400px) {
+    aside figure {
+        margin: 20px 0;
+    }
+    aside img {
+        position: absolute;
+        left: 1000px;
+    }
+    nav.flex.wrap.nav-list-dir {
+        margin-bottom: 20px;
+    }
+    #project-history a {
+        font-size: 0.7rem;
+    }
+    .aside-portfolio h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    ul.flex.column.header-list a {
+        font-size: 0.6rem;
+    }
+    .aside-portfolio nav {
+        padding: 0;
+    }
+    .aside-portfolio nav {
+        padding-left: 10px;
+    }
+    footer {
+        padding: 0;
+    }
+}

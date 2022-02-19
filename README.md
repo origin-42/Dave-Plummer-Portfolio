@@ -27,3 +27,5 @@ Dave Plummer
 ## Extras
 
 [Introduction](https://origin-42.github.io/Dave-Plummer-Portfolio/) - Dave Plummer Portfolio Website
+
+![snippet](./assets/images/Screenshot 2022-02-19 205804.png")

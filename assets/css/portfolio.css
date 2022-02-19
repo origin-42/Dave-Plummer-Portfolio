@@ -92,10 +92,38 @@
     text-align: center;
 }
 
-
 @media (max-width: 1300px) {
-    .main-content {
+    .main {
         display: flex;
         flex-direction: column;
+    }
+}
+@media (max-width: 1000px) {
+    .project-text, .project-summary {
+        width: 100%;
+    }
+    .project-content {
+        flex-wrap: wrap;
+        height: 800px;
+    }
+}
+@media (max-width: 500px) {
+    .project-text, .project-summary {
+        width: 100%;
+    }
+    .project-content {
+        flex-wrap: wrap;
+        height: 800px;
+        padding: 0;
+    }
+    .timeline-date {
+        position: absolute;
+        left: -1000px;
+    }
+    .main-content {
+        padding: 50px 5px 30px 5px;
+    }
+    .portfolio-timeline-list {
+        padding: 20px 0;
     }
 }

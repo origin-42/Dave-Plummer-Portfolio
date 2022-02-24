@@ -1,8 +1,8 @@
 # Dave Plummer Portfolio
 # Repo for my online presence.
 
-This website is designed as an online portfolio to showcase my skill as a web developer and to serve as a digital resume for employers or those willing to work alongside me. Continuous changes will made made and content added as time progresses and my portfolio builds. 
-Some content I will be working on is refractoring the code, providing better accessibility, and creating a more dynamic and engaging website with additional and/or new technologies.
+This website is designed as an online portfolio to showcase my skill as a web developer and to serve as a digital resume for employers or those willing to work alongside me. Continuous changes will ve made made and content added as time progresses and my portfolio builds. 
+I will be working too refractor code, provide better accessibility, and create a more dynamic and engaging website with additional and/or new technologies.
 
 ## Installation
 Simply initialize a directory and pull from github. 

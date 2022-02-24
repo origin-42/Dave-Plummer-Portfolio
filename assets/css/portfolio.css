@@ -64,10 +64,6 @@
 .timeline-present {
     height: 100px;
 }
-.latest-app img {
-    width: 23rem;
-    height: 14rem;
-}
 
 .project-content img {
     box-shadow: 1px 1px 2px 2px var(--black);
@@ -198,6 +194,9 @@
     }
 }
 @media (max-width: 1000px) {
+    article.project-text * {
+        margin-bottom: 10px;
+    }
     .sticky-container {
         border-right: none;
     }
@@ -253,9 +252,6 @@
 }
 
 @media (max-width: 400px) {
-    article.project-text * {
-        margin-bottom: 10px;
-    }
     article.project-text h3 {
         text-align: center;
     }
@@ -271,5 +267,8 @@
     }
     .technologies li {
         flex-basis: 40%;
+    }
+    .project-text button {
+        width: 90%;
     }
 }

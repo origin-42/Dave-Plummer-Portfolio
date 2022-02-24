@@ -1,84 +1,62 @@
-/* Remove background image */
-aside * {
-    position: absolute;
-    left: -999em;
-}
-.main-content {
-    background: var(--white);
-    z-index: 2;
-}
-
-.main-content {
-    background: transparent;
-}
-
-.contact-content {
+/* Center content */
+.grid-page-template {
+    grid-template-columns: 1fr;
+}.contact-content {
     align-items: center;
 }
 
-.grid-page-template {
-    grid-template-columns: 0fr 1fr;
-}
-/* main content */
-.contact-me-content {
+/* Main section style */
+.contact-me-content * {
+    margin-bottom: 10px;
+}.contact-me-content section {
+    margin-top: 30px;
+}.contact-me-content {
     padding: 80px 50px 140px 50px;
     width: 500px;
     background-color: var(--white);
     box-shadow: 12px -15px 15px -4px rgba(31, 73, 125, 0.8), -12px -15px 8px -4px rgba(31, 73, 125, 0.8);
-}
-.contact-h2 {
+}.contact-h2 {
     font-size: var(--jumbo);
     color: var(--text-true-blue);
     text-shadow: 1px 1px 2px var(--text-aqua-blue);
     justify-content: center;
-}
-.contact-me-content section {
-    margin-top: 30px;
-}
-.contact-me-content * {
-    margin-bottom: 10px;
-}
-.contact-me-content p {
+}.contact-me-content p {
     text-align: center;
-}
-.contact-me-content .top-list {
+}.contact-me-content .top-list {
     align-items: center;
-}
-.top-li-sec {
+}.top-li-sec {
     justify-content: center;
-}
-.top-li-sec a:hover {
+}.top-li-sec a:hover {
     color: var(--text-aqua-blue);
 }
 
-/* lists */
+
+/* styling of social links */
 .contact-left {
     padding-right: 25px;
     font-weight: bold;
     text-align: end;
-}
-.contact-me-list {
+}.contact-me-list {
     flex-direction: row;
     width: 70%;
     justify-content: space-between;
     flex-wrap: wrap;
-} 
-.contact-nav {
+} .contact-nav {
     padding: 10px 0 0 0;
     justify-content: center;
-}
-
-.cont-fa {
+}.cont-fa {
     display: inherit;
     color: var(--text-true-blue);
 }
 
+/* change to full screen for content */
 @media (max-width: 1000px) {
     .contact-me-content {
         height: 100vh;
     }
 }
 
+/* Reduce screen size for smaller devices */
 @media (max-width: 550px) {
     nav {
         padding: 0;

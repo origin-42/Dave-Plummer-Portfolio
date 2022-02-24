@@ -1,9 +1,9 @@
-/* Remove background image */
-
+/* Aside Section for Portfolio Page */
 .sticky-container {
     border-right: 5px groove var(--page-true-blue);
 }
 
+/* Main content */
 .timeline-header {
     font-size: var(--jumbo);
 }
@@ -190,6 +190,7 @@
   }
 
 
+/* stack body sections for smaller screens */
 @media (max-width: 1300px) {
     .main {
         display: flex;
@@ -211,6 +212,9 @@
 @media (max-width: 750px) {
     .project-content {
         width: inherit;
+    }
+    .portfolio-nav {
+        text-align: center;
     }
     .header-list {
         margin-top: 40px;

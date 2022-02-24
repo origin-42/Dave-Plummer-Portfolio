@@ -48,7 +48,6 @@ main * {
 }
 .hero button {
     background-color: var(--text-true-blue);
-    width: 30%;
     margin-top: 50px;
     padding: 10px 30px;
     border: 3px groove var(--white);
@@ -65,12 +64,7 @@ main * {
     text-shadow: 0 0 3px var(--white);
 }
 
-@media (max-width: 1000px) {
-    .hero button {
-        width: 60%;
-    }
-}
-
+/* adjust introduction content for smaller screens */
 @media (max-width: 790px) {
     .main-content {
         background-color: transparent;
@@ -79,12 +73,12 @@ main * {
         background: rgba(16, 50, 105);
     }
     .hero h2 {
-        font-size: var(--jumbo);
         color: var(--text-aqua-blue);
         text-shadow: 1px 1px 4px var(--text-aqua-blue);
     }
 }
 
+/* adjust style for mobile devices */
 @media (max-width: 400px) {
     .header-image h1 {
         text-align: center;

@@ -11,7 +11,7 @@ body:before {
     top: 0;
     width: 100%;
     height: 100vh;
-    background-image: url('../images/horison.jpg');
+    background-image: url('../images/Untitled-1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -22,7 +22,7 @@ main * {
     z-index: 1;
 }
 .main-content {
-    background: rgba(16, 50, 105, 0.3);
+    background: rgba(255, 255, 255, 0.5);
     border-left: 5px double var(--text-true-blue);
 }
 
@@ -51,7 +51,7 @@ main * {
     width: 30%;
     margin-top: 50px;
     padding: 10px 30px;
-    border: 3px solid var(--white);
+    border: 3px groove var(--white);
 }
 .hero button:hover {
     cursor: pointer;

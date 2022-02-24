@@ -12,6 +12,13 @@ aside * {
     background: transparent;
 }
 
+.contact-content {
+    align-items: center;
+}
+
+.grid-page-template {
+    grid-template-columns: 0fr 1fr;
+}
 /* main content */
 .contact-me-content {
     padding: 80px 50px 140px 50px;
@@ -39,6 +46,9 @@ aside * {
 }
 .top-li-sec {
     justify-content: center;
+}
+.top-li-sec a:hover {
+    color: var(--text-aqua-blue);
 }
 
 /* lists */

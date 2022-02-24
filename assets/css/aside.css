@@ -1,8 +1,9 @@
 /* Figure */
-
+aside {
+    padding-top: 50px;
+}
 figure {
     align-items: center;
-    margin: 80px 0;
 }
 figure * {
     margin-bottom: 5px;
@@ -17,28 +18,49 @@ figure figcaption {
     color: var(--text-light-blue);
     text-shadow: 1px 1px 2px var(--text-true-blue);
 }
-aside img {
+.frame {
+    width: 16rem;
+    height: 16rem;
+    align-self: center;
+    margin-bottom: 50px;
+}
+.header-image {
+    background-image: url('../images/Dave_portrait.jpg');
+    background-size: contain;
     position: relative;
     border-radius: 50%;
-    width: 300px;
-    border: 5px solid var(--page-true-blue);
-    box-shadow: 0 0 5px 5px var(--text-true-blue);
+    border: 1px solid var(--page-aqua-blue);
+    width: 100%;
+    height: 100%;
+    box-shadow: 2px 1px 1px 3px var(--text-true-blue);
     z-index: -2;
 }
 
+.header-image:hover {
+    background-image: url('../images/Dave_portrait2.jpg');
+    border: 1px solid var(--black);
+    box-shadow: 0 0 5px 5px var(--text-true-blue);
+    cursor: pointer;
+}
 nav ul li a {
-    color: var(--page-true-blue);
+    color: var(--text-light-blue);
+    text-shadow: 1px 2px var(--page-true-blue);
     font-weight: 900;
     font-size: 1.3rem;
 }
 
-/* NAVIGATION */
-nav {
-    margin-bottom: 100px;
-    padding: 50px 120px;
+nav, footer {
+    padding: 50px 0 0 20px;
 }
+.fa-brands {
+    color: var(--text-light-blue);
+}
+
+
+
+/* NAVIGATION */
 nav li {
-    margin: 10px 0;
+    margin-bottom: 10px;
 }
 nav li:hover {
     text-decoration: underline;
@@ -47,15 +69,14 @@ nav li:hover {
 
 /* FOOTER */
 footer {
-    align-items: center;
     font-size: 1.3rem;
-    padding: 0 50px 20px 60px;
 }
 footer h4 {
     color: var(--page-aqua-blue);
+    text-shadow: 1px 1px var(--page-true-blue);
 }
 footer ul li {
-    margin: 4px;
+    margin: 4px 4px 4px 0;
 }
 footer ul li i {
     color: var(--page-true-blue);
@@ -86,8 +107,8 @@ footer ul li i:hover {
     position: sticky;
     top: 0;
 }
-.aside-portfolio nav {
-    padding: 50px 20px 50px 120px;
+ul.flex.column.header-list.directory {
+    padding-right: 20px;
 }
 section.sticky-container {
     display: flex;
@@ -105,13 +126,46 @@ section.sticky-container {
     }
 }
 
+@media (max-width: 1300px) {
+    .nav-list-dir {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 750px) {
+    .header-list {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+    footer {
+        align-items: center;
+    }
+    #project-history a {
+        font-size: inherit;
+    }
+    nav.flex.wrap.nav-list-dir {
+        justify-content: space-around;
+    }
+    nav, footer {
+        padding: 0;
+    }
+}
+
 @media (max-width: 400px) {
+    aside {
+        padding-top: 0;
+    }
     aside figure {
         margin: 20px 0;
     }
     aside img {
         position: absolute;
         left: 1000px;
+    }
+    .frame {
+        height: 8rem;
+        width: 8rem;
     }
     nav.flex.wrap.nav-list-dir {
         margin-bottom: 20px;

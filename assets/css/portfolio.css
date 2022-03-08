@@ -77,14 +77,17 @@
 
 
 /* Background images */
+#quiztimeout .project-content {
+    background-image: url('../images/multiplle-choice-game.jfif');
+}
+#password-generator .project-content {
+    background-image: url('../images/password-generator-image.jfif');
+}
 #timeline-present .project-content {
     background-image: url("../images/SEO.jpg");
 }
 #horiseon .project-content {
     background-image: url("../images/SEO.jpg");
-}
-#mini-project .project-content {
-    background-image: url("../images/bootcamp.jpg");
 }
 #choredoor .project-content {
     background-image: url("../images/choredoor.jpg");
@@ -255,6 +258,7 @@
     }
     .project-content img {
         width: 100%;
+    }
 }
 
 @media (max-width: 400px) {

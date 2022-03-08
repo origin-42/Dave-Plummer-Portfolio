@@ -249,6 +249,12 @@
     .portfolio-timeline-list {
         padding: 20px 0;
     }
+    .project-text h2 {
+        font-size: var(--header3);
+        text-align: center;
+    }
+    .project-content img {
+        width: 100%;
 }
 
 @media (max-width: 400px) {

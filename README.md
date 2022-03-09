@@ -14,7 +14,6 @@ git pull
 ```
 
 ## Credits
-[Horiseon Website](https://origin-42.github.io/Horiseon-Digital-Marketing/)
 
 [Origin 42](https://github.com/origin-42)
 

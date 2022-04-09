@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Yellowtail&display=swap');
+
+:root {
+
+    --darkGreen: rgb(37, 38, 23);
+    --dark-ishGreen: rgb(52, 64, 26);
+    --treeGreen: rgb(100, 115, 47);
+    --fleuroGreen: rgb(202, 217, 89);
+    --grassGreen: rgb(180, 191, 94);
+
+    /* Typography */
+    --merri: 'Indie Flower', cursive;
+    --tili: 'Titillium Web', sans-serif;
+    --yellowTail: 'Yellowtail', cursive;
+
+    font-size: 16px;
+
+}
+
+/* Image Backdrop */
+main::before {
+    position: absolute;
+    content: "";
+    background-image: url('../images/forrest.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+main::after {
+    position: absolute;
+    content: "";
+    background: linear-gradient(rgba(52, 64, 26, 1), rgba(202, 217, 89, 0.5));
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Hero */
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+.hero-container h1 {
+    font-family: var(--merri);
+    color: var(--darkGreen);
+    text-shadow: 1px 1px 1px var(--fleuroGreen);
+    font-weight: 900;
+    position: relative;
+    font-size: 4rem;
+}
+.hero-container li a {
+    color: var(--fleuroGreen);
+    font-size: 1.2rem;
+}
+
+/* Portfolio Section */
+.portfolio {
+    display: flex;
+    flex-direction: column;
+}
+.portfolio h2 {
+    color: var(--fleuroGreen);
+    font-size: 3rem;
+    text-align: center;
+    font-style: italic;
+    opacity: .8;
+    text-shadow: 3px 4px 4px var(--darkGreen);
+}
+.portfolio {
+    display: flex;
+    padding: 1.5rem;
+    max-height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+/* Cards */
+.card {
+    border: 4px ridge var(--dark-ishGreen);
+    background-color: var(--treeGreen);
+    color: var(--fleuroGreen);
+    text-align: center;
+    padding: .3rem;
+    cursor: pointer;
+    opacity: .7;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.card:hover {
+    border: 4px solid var(--fleuroGreen);
+    text-shadow: 2px 2px 2px var(--darkGreen);
+    box-shadow: 0 0 3px 3px var(--darkGreen);
+    opacity: 1;
+}
+.card .card-img-top, .card .card-body {
+    height: 50%;
+    margin-bottom: 10px;
+}
+.card-title {
+    font-family: var(--yellowTail);
+    font-size: 1.7rem;
+}
+img.card-img-top {
+    border: 2px ridge var(--darkGreen);
+    border-radius: 10px;
+}
+.card:hover img.card-img-top {
+    border: 2px ridge var(--fleuroGreen);
+    box-shadow: 0 0 2px 2px var(--darkGreen);
+}
+
+/* Portfolio Selection Modal */
+#portfolio-selection {
+    width: 70rem;
+    background-color: var(--dark-ishGreen);
+    border: 3px groove var(--darkGreen);
+}
+#portfolio-selection img {
+    cursor: pointer;
+}
+#portfolio-selection img:hover {
+    box-shadow: 0 0 2px 2px var(--dark-ishGreen);
+}
+#portfolio-selection:hover {
+    box-shadow: 0 0 4px 4px var(--darkGreen);
+}
+#portfolio-selection * {
+    color: var(--fleuroGreen);
+}
+#pf-image-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.modal-header {
+    border-bottom: 1px solid var(--fleuroGreen);
+}
+#portfolio-selection .modal-content {
+    background-color: var(--treeGreen);
+}
+#portfolio-selection .modal-content * {
+    text-shadow: 2px 2px 2px var(--dark-ishGreen);
+}
+#portfolio-selection .modal-title {
+    font-size: 2rem;
+}
+#portfolio-selection button span {
+    font-size: 2.2rem;
+    color: var(--darkGreen);
+}
+#portfolio-selection .modal-body {
+    display: flex;
+}
+#portfolio-selection:hover .modal-content {
+    box-shadow: 0 0 2px 2px var(--darkGreen);
+}
+#portfolio-selection .modal-body-left ul {
+    list-style: circle;
+    margin-left: 20px;
+}
+#portfolio-selection .modal-body-right {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 80%;
+    margin-left: 10px;
+}
+#portfolio-selection #pf-techUsed ul {
+    list-style: none;
+}
+#portfolio-selection .modal-body-right img, .modal-body-right .tech {
+    height: 50%;
+}
+#portfolio-selection .modal-body-right img {
+    width: 100%;
+    max-height: 300px;
+    max-width: 300px;
+    margin: 0 auto;
+    border: 3px groove var(--darkGreen);
+}
+#portfolio-selection .tech h5 {
+    text-align: center;
+}
+#portfolio-selection .modal-body-right .tech ul {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: .2rem;
+}
+#portfolio-selection .modal-body-right .tech ul * {
+    border: 1px solid var(--darkGreen);
+    margin: 0 .3rem;
+    padding: 2px 10px;
+    text-align: center;
+    background-color: var(--dark-ishGreen);
+}
+#portfolio-selection #pf-techUsed {
+    justify-content: center;
+}
+
+
+/* Modals */
+.modal {
+    top: 380px;
+}
+.modal-dialog {
+    margin: 1.75rem;
+}
+.modal-content {
+    background-color: var(--dark-ishGreen);
+    color: var(--fleuroGreen);
+}
+.modal-content * {
+    color: var(--fleuroGreen);
+}
+.modal-content input {
+    border: 1px solid var(--fleuroGreen);
+}
+.modal-content textarea {
+    border: 1px solid var(--fleuroGreen);
+}
+.modal-footer button {
+    background-color: var(--treeGreen);
+    border: 1px solid var(--fleuroGreen);
+}
+.modal-footer button:hover {
+    background-color: var(--fleuroGreen);
+    box-shadow: 0 0 2px 2px var(--darkGreen);
+    color: var(--darkGreen);
+}
+
+
+/* Grid Layout */
+@media (min-width: 960px) {
+    .section {
+        display: grid;
+        grid-template-columns: 3fr 5fr;
+    }
+}
+@media (max-width: 1000px) {
+    .modal-body {
+        flex-wrap: wrap;
+    }
+    #portfolio-selection {
+        width: inherit;
+    }
+    #portfolio-selection p, #portfolio-selection h4 {
+        text-align: center;
+    }
+    #portfolio-selection .modal-body {
+        justify-content: center;
+    }
+    .modal {
+        top: 0;
+    }
+}
+@media (max-width: 960px) {
+    .section {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 100vh;
+    }
+    .hero-container {
+        text-align: center;
+    }
+}

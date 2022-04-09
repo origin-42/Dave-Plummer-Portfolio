@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Boostrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+
+    <!-- JQuery UI -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Reset -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+
+    <!-- Custom -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Dave Plummer</title>
+</head>
+<body>
+    <main>
+        <div class="section">
+            <div class="title">
+                <div class="hero-section">
+                    <div class="hero-container">
+                        <h1>Dave Plummer</h1>
+                        <nav>
+                            <ul>
+                                <li><a href="#cvFormRequest" data-bs-toggle="modal">Request CV</a></li>
+                                <li><a href="#contactForm" data-bs-toggle="modal">Contact Me</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="portoflio-selection-container">
+                    <section class="board">
+                        <!-- Portfolio Section -->
+                    </section>
+                </div>
+            </div>
+            <div class="portfolio">
+                <h2>Projects</h2>
+                <div class="portfolio-container" id="portfolio-container">
+                    <!-- Cards -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Modal For Portfolio Selection -->
+    <div class="modal fade" id="portfolio-selection" tabindex="-1" aria-labelledby="#portfolioSelectionTitle" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <p id="projectType"></p>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-lg" id="portfolioSelectionTitle"><span id="pf-title">Chorebot</span> | Created: <span id="pf-dateReleased">April, 2022</span></h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="modal-body-left">
+
+                        <h4>Description:</h4>
+                        <p id="pf-description">Here is a game designed to test your knowledge. there's always a way to around doing your chores. Try NOT to find Chorebot.</p>
+                        <ul>
+                            <li id="pf-tagOne">Calculate where Chorebot might be</li>
+                            <li id="pf-tagTwo">Receive feedback on wins and losses</li>
+                            <li id="pf-tagThree">Gain advantage and defeat, not defeating your chores</li>
+                        </ul>
+                        <h4>Purpose:</h4>
+                        <p id="pf-purpose">I created a game from scratch as a requirement of work from Codecademy where the goal was to use Javascript to alter the page and results based on user input and outcome.</p>
+
+                    </div>
+                    <div class="modal-body-right">
+                        <a href="" title="Open Website" target="_blank" id="pf-image-wrapper"><img class="img-responsive" id="pf-image" style="margin: 0 auto;" src="./assets/images/portfolio-images/choredoor.jpg" alt=""></a>
+                        <div class="tech" id="technologies">
+                            <h5>Technology Used</h5>
+                            <ul id="pf-techUsed">
+                                <!-- li for tech -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal For Email Contact -->
+    <div class="modal fade" id="contactForm" tabindex="-1" aria-labelledby="#contactFormTitle" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactFormTitle">Email Me</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <form action="mailto:daveplum1991@gmail.com" method="get" enctype="text/plain">
+                        <label for="cVEmailName">Name:</label>
+                        <input type="text" class="form-control" name="cVEmailName" id="cVEmailName" placeholder="john.." />
+                        <label for="modal-email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="modal-email" name="modal-email" placeholder="e.g. mike@ozmail.com">
+                        <label for="contactMessage"></label>
+                        <textarea class="form-control" id="contactMessage" name="contactMessage" cols="20" placeholder="type your message.."></textarea>
+                    </form>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Send Email</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for CV Request -->
+    <div class="modal fade" id="cvFormRequest" tabindex="-1" aria-labelledby="#cvFormTitle" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactFormTitle">Request CV</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <form action="mailto:daveplum1991@gmail.com" method="get" enctype="text/plain">
+                        <label for="contactEmailName">Name:</label>
+                        <input type="text" class="form-control" name="contactEmailName" id="contactEmailName" placeholder="john.." />
+                        <label for="modal-email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="modal-email" name="modal-email" placeholder="e.g. mike@ozmail.com">
+                        <label for="contactMessage"></label>
+                        <textarea class="form-control" id="contactMessage" name="contactMessage" cols="20">Requesting CV</textarea>
+                    </form>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Send Email</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <main>
+        
+        <!-- Portfolio Section -->
+        <section>
+
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
